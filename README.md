@@ -2,6 +2,11 @@
 
 A command-line tool to visualize your repository's evolution through time.
 
+## Requirements
+
+- Rust 1.83+ (for latest dependencies)
+- Or use the locked Cargo.lock for Rust 1.75+
+
 ## Features
 
 - [x] List commit history with timestamps
@@ -24,7 +29,11 @@ git-time-machine -p /path/to/repo
 ## Building
 
 ```bash
+# With latest Rust
 cargo build --release
+
+# With Rust 1.75 (locked dependencies)
+cargo build --release --locked
 ```
 
 ## Tech Stack
