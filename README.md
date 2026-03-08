@@ -1,47 +1,32 @@
 # Git Time Machine
 
-A command-line tool to visualize your repository's evolution through time.
-
-## Requirements
-
-- Rust 1.83+ (for latest dependencies)
-- Or use the locked Cargo.lock for Rust 1.75+
+Git Time Machine - Development and automation tool
 
 ## Features
 
-- [x] List commit history with timestamps
-- [ ] Interactive timeline TUI
-- [ ] File tree visualization at any point in history
-- [ ] Search: "When was this line introduced?"
-- [ ] Heatmap of file changes over time
-- [ ] Export snapshots of the repo at any commit
+- CLI interface
+- Easy to use
+- Lightweight and fast
+
+## Installation
+
+```bash
+cd git-time-machine && pip install -r requirements.txt  # if Python
+```
 
 ## Usage
 
 ```bash
-# Show commit history for current directory
-git-time-machine
-
-# Show history for a specific repo
-git-time-machine -p /path/to/repo
+# Run the tool
+cd git-time-machine
+# Follow tool-specific instructions
 ```
 
-## Building
 
-```bash
-# With latest Rust
-cargo build --release
 
-# With Rust 1.75 (locked dependencies)
-cargo build --release --locked
-```
+## Configuration
 
-## Tech Stack
-
-- Rust
-- git2 (libgit2 bindings)
-- clap (CLI parsing)
-- chrono (date/time handling)
+See project files for configuration options.
 
 ## License
 
